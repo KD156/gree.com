@@ -1,0 +1,12 @@
+@mixin li-style($li){
+    list-style: $li;
+}
+@mixin a($a){
+    text-decoration: $a;
+}
+@mixin flex($d,$fd,$jc,$ai){
+    display: $d;
+    flex-direction: $fd;
+    justify-content:$jc;
+    align-items: $ai;
+}

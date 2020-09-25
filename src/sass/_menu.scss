@@ -1,0 +1,49 @@
+#menu{
+    width: 1200px;
+    height: 36px;
+    margin: 0 auto;
+    .menu-left{
+        width: 174px;
+        height: 36px;
+        float: left;
+        background: #cc0000;
+        @include flex(flex,row,center,center);
+        .lf{
+            width: 142px;
+            position: relative;
+            height: 36px;
+            @include flex(flex,row,center,center);
+            >span{
+                font-size: 17px;
+                color: #fff;
+                position: absolute;
+                top: 10px;
+                left: 17px;
+            }
+            >a {
+                @include a(none);
+                font-size: 12px;
+                color: #fff;
+                margin-left: 30px;
+            }
+        }
+    }
+    .menu-right{
+        width: 614px;
+        height: 36px;
+        margin-left: 196px;
+        @include flex(flex,row,space-between,center);
+        @include li-style(none);
+        >li{
+            font-size: 14px;
+            float: left;
+        }
+        >li a{
+            @include a(none);
+            color: rgb(66,66,66);
+        }
+        >li a:hover{
+            color: rgba(66,66,66,.7);
+        }
+    }
+}
