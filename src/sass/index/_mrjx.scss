@@ -1,0 +1,68 @@
+.title-font {
+    width: 1200px;
+    height: 23px;
+    margin: 14px auto;
+    font-size: 18px;
+    color: #757575;
+}
+
+#mrjx {
+    width: 1200px;
+    height: 570px;
+    // background: green;
+    margin: 0 auto;
+    .mr1{
+        width: 300px;
+        height: 570px;
+        padding-right: 10px;
+        float: left;
+    }
+    .mr2{
+        width: 590px;
+        height: 570px;
+        padding: 0 10px 0 0;
+        // background: #ccc;
+        float: left;
+        .mr-top{
+            width: 590px;
+            height: 280px;
+            // background: red;
+            float: left;
+        }
+        .mr-b{
+            width: 290px;
+            height: 280px;
+            float: left;
+            // background: gold;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        .mr-b-r{
+            width: 290px;
+            height: 280px;
+            float: left;
+            // background: gold;
+            margin-top: 10px;
+        }
+    }
+    .mr3{
+        width: 290px;
+        height: 570px;
+        // background: blue;
+        float: right;
+        .mrt{
+            width: 290px;
+            height: 280px;
+            margin-bottom: 10px;
+            // background: #cc0000;
+        }
+        .mrb{
+            width: 290px;
+            height: 280px;
+            // background: #cc0000;
+        }
+    }
+    a:hover{
+        opacity: .8;
+    }
+}
