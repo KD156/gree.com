@@ -1,0 +1,30 @@
+#n-tab{
+    width: 980px;
+    height: 698px;
+    margin: 10px auto;
+    background: #fff;
+    .tab-title{
+        width: 980px;
+        height: 45px;
+        position: relative;
+        .tab-top{
+            width: 140px;
+            height: 36px;
+            padding-bottom: 7px;
+            border: 1px solid #e8e8e8;
+            border-top: 2px solid #2daae4;
+            border-bottom: 1px solid #fff;
+            color: #2daae4;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 36px;
+        }
+    }
+    .tab-content{
+        width: 938px;
+        height: 612px;
+        padding: 20px;
+        border: 1px #e8e8e8 solid;
+    }
+}

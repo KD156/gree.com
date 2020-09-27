@@ -1,0 +1,31 @@
+header{
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    #head{
+        width: 1200px;
+        height: 110px;
+        margin: 0 auto;
+        background: #fff;
+        .logo{
+            width: 210px;
+            height: 80px;
+            margin-top: 10px;
+            float: left;
+            >img{
+                width: 173px;
+                height: 80px;
+            }
+        }
+        .head-title{
+            width: 160px;
+            height: 100px;
+            color: #747474;
+            float: left;
+            @include flex(flex,row,flex-start,center);
+            font-size: 24px;
+            >span{
+                margin-right: 10px;
+            }
+        }
+    }
+}

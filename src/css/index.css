@@ -16,6 +16,7 @@ body {
 }
 
 #header_top .head-center {
+  position: relative;
   width: 1200px;
   height: 35px;
   margin: 0 auto;
@@ -86,7 +87,7 @@ body {
           align-items: center;
 }
 
-#header_top .head-center .head-list1 li {
+#header_top .head-center .head-list1 > li {
   width: 81px;
   height: 35px;
   padding: 0px 10px;
@@ -107,13 +108,61 @@ body {
   right: 0px;
 }
 
-#header_top .head-center .head-list1 a {
+#header_top .head-center .head-list1 > li a {
   text-decoration: none;
   color: #747474;
 }
 
-#header_top .head-center .head-list1 a:hover {
+#header_top .head-center .head-list1 > li a:hover {
   color: #cc0000;
+}
+
+#header_top .head-center .service {
+  width: 90px;
+  height: 49px;
+  padding: 10px 0px;
+  border: 1px solid #f5f5f5;
+  background: #fff;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  right: 0px;
+}
+
+#header_top .head-center .service > p {
+  height: 24px;
+  width: 90px;
+  font-size: 12px;
+  color: #747474;
+  line-height: 24px;
+  text-align: center;
+}
+
+#header_top .head-center .service > p span {
+  color: #ff6600;
+  font-size: 20px;
+  margin: 2px 0px 0px 2px;
+}
+
+#header_top .head-center .collect {
+  width: 90px;
+  height: 49px;
+  padding: 10px 0;
+  background: #fff;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  right: 90px;
+}
+
+#header_top .head-center .collect > p {
+  width: 90px;
+  height: 24px;
+  font-size: 12px;
+  color: #747474;
+  text-align: center;
+  line-height: 24px;
 }
 
 #header {
@@ -395,37 +444,43 @@ body {
   width: 100%;
   height: 450px;
   background: blue;
+  position: relative;
+  overflow: hidden;
 }
 
-#banner .banner-center {
-  width: 1200px;
-  height: 450px;
-  margin: 0 auto;
+#banner > img {
+  width: 100%;
+  height: 100%;
 }
 
-#banner .banner-center .nav {
+#banner .nav {
   width: 174px;
   height: 442px;
-  background: rgba(116, 116, 116, 0.9);
+  background: rgba(95, 95, 95, 0.8);
   padding: 4px 0px;
   list-style: none;
+  position: absolute;
+  top: 0px;
+  left: 123.5px;
 }
 
-#banner .banner-center .nav .active {
+#banner .nav .active {
   background: #fff;
   color: #cc0000;
 }
 
-#banner .banner-center .nav > li {
-  width: 142px;
+#banner .nav > li {
+  width: 141.5px;
   height: 34px;
-  padding-left: 32px;
-  line-height: 32px;
   position: relative;
   cursor: pointer;
+  color: #fff;
+  font-size: 12px;
+  padding-left: 32px;
+  line-height: 32px;
 }
 
-#banner .banner-center .nav > li img {
+#banner .nav > li img {
   position: absolute;
   top: 6px;
   left: 6px;
@@ -433,18 +488,42 @@ body {
   height: 20px;
 }
 
-#banner .banner-center .nav > li span {
+#banner .nav > li span {
   color: #fff;
   font-size: 15px;
   float: right;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
-#banner .banner-center .nav > li a {
-  color: #fff;
-  font-size: 12px;
+#banner .nav-box {
+  width: 672px;
+  height: 448px;
+  background: #fff;
+  border: 1px solid #d3d3d3;
+  position: absolute;
+  top: 0px;
+  left: 297.5px;
+  display: none;
+}
+
+#banner .nav-box .nav-list {
+  list-style: none;
+  font-size: 14px;
+  color: #747474;
+  width: 592px;
+  height: 394px;
+  margin: 28px 80px;
+}
+
+#banner .nav-box .nav-list > li a {
   text-decoration: none;
-  float: left;
+  color: #747474;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#banner .nav-box .nav-list > li a:hover {
+  color: #cc0000;
 }
 
 #hot-sale {
@@ -476,6 +555,11 @@ body {
   height: 180px;
   margin-right: 7px;
   float: left;
+}
+
+#hot-sale .product .pro-list > li a img {
+  width: 100%;
+  height: 100%;
 }
 
 #hot-sale .product .pro-list > li:hover {
@@ -554,7 +638,7 @@ body {
 
 #floors {
   width: 1200px;
-  min-height: 1000px;
+  min-height: 616px;
   margin: 0 auto;
   margin-top: 10px;
   overflow: hidden;
@@ -727,6 +811,7 @@ body {
   right: 20px;
   width: 60px;
   min-height: 226px;
+  display: none;
   list-style: none;
 }
 
@@ -744,6 +829,12 @@ body {
 .right-bar > li > a {
   text-decoration: none;
   color: #ed5759;
+}
+
+.right-bar .ac {
+  border: 1px solid #cc0000;
+  color: #cc0000;
+  background: #fdeeee;
 }
 
 #video {

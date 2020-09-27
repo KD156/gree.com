@@ -1,6 +1,6 @@
 #floors {
     width: 1200px;
-    min-height: 1000px;
+    min-height: 616px;
     // background: yellowgreen;
     margin: 0 auto;
     margin-top: 10px;
@@ -82,7 +82,6 @@
                     width: 630px;
                     height: 567px;
                     @include li-style(none);
-
                     >li {
                         width: 200px;
                         height: 280px;
