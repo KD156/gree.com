@@ -1,0 +1,196 @@
+html,body{
+    background: #fff;
+}
+#content {
+    width: 1200px;
+    min-height: 500px;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 7px;
+    .bread {
+        width: 1160px;
+        height: 38px;
+        margin: 10px 20px;
+        background: #fff;
+        line-height: 38px;
+        font-size: 12px;
+
+        >span {
+            font-size: 13px;
+            color: #747474;
+        }
+
+        >a {
+            color: #333333;
+            margin-left: 5px;
+            @include a(none);
+        }
+    }
+
+    .paixu {
+        width: 962px;
+        height: 35px;
+        // background: gold;
+        margin: 0 auto;
+        border: 1px solid #E8E8E8;
+        background: #fff;
+
+        .paixu-list {
+            width: 416px;
+            height: 35px;
+            @include li-style(none);
+
+            >li {
+                width: 73px;
+                height: 35px;
+                border-right: 1px solid #e8e8e8;
+                padding: 0px 15px;
+                // background: green;
+                float: left;
+                font-size: 12px;
+                line-height: 35px;
+                text-align: center;
+
+                >a {
+                    @include a(none);
+                    color: #747474;
+                }
+
+                >span {
+                    color: #747474;
+                    font-size: 17px;
+                }
+            }
+
+            >li:hover {
+                background: #cc0000;
+            }
+        }
+    }
+
+    .list-product {
+        width: 965px;
+        min-height: 764px;
+        background: #fff;
+        margin: 0 auto;
+
+        .list1 {
+            width: 965px;
+            @include li-style(none);
+
+            >li {
+                width: 229px;
+                height: 370px;
+                float: left;
+                margin: 5px 0px;
+                background: #fff;
+                padding: 5px;
+                border-top: 1px solid #fff;
+                border-left: 1px solid #fff;
+                border-right: 1px solid #fff;
+                border-bottom: 1px dotted #e8e8e8;
+            }
+
+            >li:hover {
+                box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.1);
+            }
+
+            >li a {
+                @include a(none);
+            }
+
+            .li-top {
+                width: 220px;
+                height: 230px;
+                padding: 5px;
+                // background: blue;
+                >img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .li-m {
+                width: 210px;
+                height: 48px;
+                padding: 0 10px;
+                margin-top: 7px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: #3e3a39;
+                font-size: 14px;
+                text-align: center;
+                // background: green;
+            }
+
+            .li-b {
+                width: 210px;
+                height: 29px;
+                padding: 0 10px;
+                margin-top: 7px;
+                color: #979797;
+                font-size: 12px;
+                text-align: center;
+                // background: gold;
+                line-height: 29px;
+            }
+
+            .li-p {
+                display: block;
+                width: 204px;
+                height: 22px;
+                margin-top: 7px;
+                padding: 0 13px;
+                color: #FF4D4F;
+                font-size: 14px;
+                text-align: center;
+                // background: red;
+                line-height: 22px;
+            }
+        }
+    }
+
+    .page{
+        width: 272px;
+        height: 30px;
+        background: #fff;
+        float: right;
+        >ul{
+            @include li-style(none);
+            >li{
+                float: left;
+            }
+            >li >a{
+                font-size: 12px;
+                color: #747474;
+                text-align: center;
+                line-height: 30px;
+                @include a(none);
+                display: block;
+            }
+            .lastPage{
+                width: 24px;
+                height: 29px;
+                padding: 0px 10px;
+                margin-left: 1px;
+                border: 1px solid #ccc;
+            }
+            .la{
+                width: 36px;
+                height: 29px;
+                padding: 0px 10px;
+                border: 1px solid #ccc;
+                margin-left: 1px;
+            }
+            .curr{
+                margin-left: 1px;
+                width: 6.7px;
+                height: 29px;
+                padding: 0px 10px;
+                border: 1px solid #ccc;
+            }
+        }
+    }
+}

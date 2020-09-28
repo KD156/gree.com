@@ -1,6 +1,6 @@
 require.config({
     paths: {
-        'jquery': 'https://cdn.bootcdn.net/ajax/libs/jquery/3.3.0/jquery.min',
+        'jquery': './lib/jquery',
         'index': './index'
     },
     shim: {

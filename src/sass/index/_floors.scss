@@ -39,7 +39,7 @@
             }
 
             >a {
-                width: 66px;
+                width: 72px;
                 height: 24px;
                 @include a(none);
                 float: left;
@@ -48,6 +48,7 @@
                 color: #757575;
                 font-family: "黑体";
                 line-height: 26px;
+                text-align: center;
             }
 
             >a:hover {

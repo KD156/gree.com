@@ -90,28 +90,102 @@ define(['jquery'], function () {
             // 头部hover结束
 
 
-            // 楼梯特效
+            // 楼梯特效开始
             $(window).on('scroll', function () {
                 let f = $('.floor1:first');
                 let top = f.offset().top;
                 let height = f.height();
                 let win = $(window).scrollTop();
-                // console.log(i);
-                if (win > top - height) {
+                let b = $('.floor1:last').offset().top
+                if (win > top - height && win < b + height) {
                     $('.right-bar').css("display", "block")
-                    // $('.right-bar li').addClass('ac');
+
+                    $('.right-bar li').hover(function () {
+                        let ff = $('.floor_nav a').eq($(this).index()).text()
+                        $('.right-bar li').eq($(this).index()).addClass('ac')
+                        $('.right-bar li').eq($(this).index()).text(ff)
+                    },
+                        function () {
+                            $('.right-bar li').removeClass('ac')
+                            $('.right-bar li').eq($(this).index()).text($('.f1').eq($(this).index()).text())
+                            $('.right-bar li').css("color", "#ed5759")
+                        });
+
                 } else {
                     $('.right-bar').css("display", "none")
                 }
+
                 $('.floor1').each(function (i, elm) {
                     let a = $(elm).offset().top + $(elm).height() / 2;
+                    $('.right-bar>li').each(function (i, elm) {
+                        $(elm).text($('.f1').eq(i).text())
+                        $(elm).css("color", "#ed5759")
+                    })
                     if (a > win) {
                         $('.right-bar li').removeClass('ac');
                         $('.right-bar li').eq(i).addClass('ac');
+                        $('.right-bar li').eq(i).text($('.floor_nav a').eq(i).text());
                         return false;
                     }
                 })
             })
+
+            // 楼梯点击
+            $('.right-bar li').on('click', function () {
+                $(this).addClass('ac').siblings().removeClass('ac');
+                let ftop = $('.floor1').eq($(this).index()).offset().top;
+                $('html,body').stop(true).animate({
+                    scrollTop: ftop
+                })
+            })
+
+            // 楼梯hover
+
+            // 楼梯特效结束
+
+
+            // 轮播图开始
+            function lb() {
+                let index = 0;
+                let timer = null;
+                clearInterval(timer);
+                let length = $('.banner-list li').length - 1;
+                let wid = $('.banner-list li:first').width();
+                $('.banner-list').css({
+                    width: wid * (length + 1)
+                })
+                $('.yuan li').eq(0).addClass('at').siblings().removeClass('at')
+                timer = setInterval(function () {
+                    if (index == length) {
+                        index = 0;
+                        $('.banner-list').css({
+                            left: 0
+                        })
+                    }
+                    index++
+                    $('.banner-list').stop(true).animate({
+                        left: index * -wid
+                    })
+
+                    $('.yuan li').on('click', function () {
+                        $(this).addClass('at').siblings().removeClass('at')
+                        $('.banner-list').stop(true).animate({
+                            left: $(this).index() * -wid
+                        })
+                    })
+                    fn()
+                }, 3000)
+
+                function fn() {
+                    if (index == length) {
+                        $('.yuan li').eq(0).addClass('at').siblings().removeClass('at')
+                    } else {
+                        $('.yuan li').eq(index).addClass('at').siblings().removeClass('at')
+                    }
+                }
+            }
+            lb()
+            // 轮播图结束
         }
-    }
+    };
 });

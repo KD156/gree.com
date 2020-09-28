@@ -443,14 +443,67 @@ body {
 #banner {
   width: 100%;
   height: 450px;
-  background: blue;
   position: relative;
   overflow: hidden;
 }
 
-#banner > img {
+#banner .banner-list {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 5000px;
+  height: 450px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+#banner .banner-list > li {
+  width: 1446.8px;
+  height: 450px;
+}
+
+#banner .banner-list > li > a img {
+  width: 1446.8px;
+  height: 450px;
+}
+
+#banner .yuan {
+  list-style: none;
   width: 100%;
-  height: 100%;
+  height: 16px;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#banner .yuan > li {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-left: 5px;
+  cursor: pointer;
+  float: left;
+}
+
+#banner .yuan .at {
+  background: #ccc;
 }
 
 #banner .nav {
@@ -677,7 +730,7 @@ body {
 }
 
 #floors .floor1 .floor_nav > a {
-  width: 66px;
+  width: 72px;
   height: 24px;
   text-decoration: none;
   float: left;
@@ -686,6 +739,7 @@ body {
   color: #757575;
   font-family: "黑体";
   line-height: 26px;
+  text-align: center;
 }
 
 #floors .floor1 .floor_nav > a:hover {
@@ -817,7 +871,7 @@ body {
 
 .right-bar > li {
   width: 58px;
-  height: 34px;
+  min-height: 34px;
   border: 1px solid #dedede;
   margin-bottom: 2px;
   line-height: 34px;
