@@ -1,0 +1,227 @@
+header {
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+header #head {
+  width: 1200px;
+  height: 110px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+header #head .logo {
+  width: 210px;
+  height: 80px;
+  margin-top: 10px;
+  float: left;
+}
+
+header #head .logo > img {
+  width: 173px;
+  height: 80px;
+}
+
+header #head .head-title {
+  width: 160px;
+  height: 100px;
+  color: #747474;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+}
+
+header #head .head-title > span {
+  margin-right: 10px;
+}
+
+html,
+body {
+  background: #fafafa;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#login {
+  width: 980px;
+  height: 410px;
+  background: #fff;
+  margin: 10px auto;
+  -webkit-box-shadow: 0px 0px 8px #ddd;
+          box-shadow: 0px 0px 8px #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#login .boss {
+  width: 500px;
+  height: 380px;
+  margin: 10px 30px;
+}
+
+#login .boss > img {
+  width: 100%;
+  height: 100%;
+}
+
+#login .xinxi {
+  width: 380px;
+  height: 380px;
+  padding-top: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#login .xinxi .login-content {
+  width: 295px;
+  height: 234px;
+  margin-top: 20px;
+}
+
+#login .xinxi .login-content .reg-box {
+  width: 260px;
+  height: 35px;
+  float: left;
+  padding: 1px 2px 1px 15px;
+  border: 1px solid #e8e8e8;
+  color: #747474;
+  margin-top: 20px;
+}
+
+#login .xinxi .login-content .reg-box > input {
+  height: 35px;
+  width: 220px;
+  outline: none;
+  border: none;
+}
+
+#login .xinxi .login-content .reg-box > span {
+  width: 35px;
+  height: 35px;
+  float: right;
+  text-align: center;
+  line-height: 35px;
+  color: #747474;
+}
+
+#login .xinxi .login-content .btn {
+  width: 280px;
+  height: 40px;
+  background: #cc0000;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 2px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#login .xinxi .login-content > a {
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  color: #cc0000;
+  margin-top: 20px;
+}
+
+#footer {
+  width: 1200px;
+  height: 327px;
+  margin: 0 auto;
+  background: #fff;
+  border-top: 1.5px solid #e2e2e2;
+}
+
+#footer .list {
+  width: 960px;
+  height: 137px;
+  background: #fff;
+  padding: 37px 90px 0 150px;
+  list-style: none;
+}
+
+#footer .list > li {
+  width: 135px;
+  height: 86px;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#footer .list > li > dt {
+  color: #525252;
+  font-size: 14px;
+  font-family: Microsoft Yahei, Arial;
+  font-weight: bold;
+}
+
+#footer .list > li > dd {
+  color: #b2b2b2;
+  font-size: 12px;
+}
+
+#footer .list > li:nth-child(3) {
+  height: 137px;
+}
+
+#footer .list > li:nth-child(4) {
+  height: 57px;
+}
+
+#footer .list > li:nth-child(5) {
+  height: 57px;
+}
+
+#footer .list > li:nth-child(6) {
+  height: 57px;
+}
+
+#footer .copyright {
+  width: 1179px;
+  height: 55.4px;
+  padding: 66px 0 30px 21px;
+}
+
+#footer .copyright > p {
+  height: 15.4px;
+  font-size: 12px;
+  color: #b2b2b2;
+}

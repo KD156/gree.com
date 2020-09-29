@@ -215,7 +215,7 @@ header #head .head-title > span {
 
 #n-tab {
   width: 980px;
-  height: 698px;
+  height: 628px;
   margin: 10px auto;
   background: #fff;
 }
@@ -245,6 +245,84 @@ header #head .head-title > span {
   height: 612px;
   padding: 20px;
   border: 1px #e8e8e8 solid;
+}
+
+#n-tab .tab-content .register {
+  width: 750px;
+  height: 552px;
+  margin: 30px 10px;
+}
+
+#n-tab .tab-content .reg-list {
+  list-style: none;
+}
+
+#n-tab .tab-content .reg-list > li {
+  width: 750px;
+  height: 60px;
+  padding-top: 9px;
+}
+
+#n-tab .tab-content .reg-list > li > span {
+  float: left;
+  width: 170px;
+  height: 35px;
+  padding-right: 10px;
+  text-align: right;
+  line-height: 35px;
+  font-size: 12px;
+  color: #747474;
+}
+
+#n-tab .tab-content .reg-list > li .reg-box {
+  width: 260px;
+  height: 35px;
+  float: left;
+  padding: 1px 2px 1px 15px;
+  border: 1px solid #e8e8e8;
+  color: #747474;
+}
+
+#n-tab .tab-content .reg-list > li .reg-box > input {
+  height: 35px;
+  width: 220px;
+  outline: none;
+  border: none;
+}
+
+#n-tab .tab-content .reg-list > li .reg-box > span {
+  width: 35px;
+  height: 35px;
+  float: right;
+  text-align: center;
+  line-height: 35px;
+  color: #747474;
+}
+
+#n-tab .tab-content .reg-list > li > p {
+  width: 575px;
+  height: 33px;
+  margin-left: 175px;
+  font-size: 12px;
+  line-height: 33px;
+  color: #747474;
+}
+
+#n-tab .tab-content .reg-list > li > p:last-child {
+  color: #cc0000;
+}
+
+#n-tab .tab-content .reg-list > li .btn {
+  width: 260px;
+  height: 40px;
+  padding: 0px 25px;
+  background: #cc0000;
+  border: none;
+  border-radius: 2px;
+  margin-top: 30px;
+  margin-left: 180px;
+  color: #fff;
+  cursor: pointer;
 }
 
 #footer {
