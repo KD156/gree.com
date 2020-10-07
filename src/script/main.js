@@ -1,8 +1,9 @@
 require.config({
     paths: {
-        'jquery': 'https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min',
+        'jquery': './lib/jquery',
         'jlazyload': 'https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.8.3/jquery.lazyload.min',
-        'pagination':'./lib/pagination'
+        'pagination':'./lib/pagination',
+        'jcookie':'./lib/cookie'
     },
     shim: {
         'jlazyload': {
@@ -12,6 +13,10 @@ require.config({
         'pagination': {
             deps: ['jquery'],
             exports: 'pagination'
+        },
+        'jcookie': {
+            deps: ['jquery'],
+            exports: 'jcookie'
         }
     }
 });

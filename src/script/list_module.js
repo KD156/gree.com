@@ -34,7 +34,7 @@ define(['jquery', 'jlazyload', 'pagination'], function () {
                     res.forEach(function (elm, i) {
                         strlist += `
                         <li>
-                        <a href="javascript:;" id=${elm.sid}>
+                        <a href="http://127.0.0.1/h5-2006/gree.com/projectname/src/detail.html?sid=${elm.sid}">
                         <p class="li-top">
                             <img class="lazy" data-original="${elm.url}" alt="">
                         </p>
@@ -93,7 +93,7 @@ define(['jquery', 'jlazyload', 'pagination'], function () {
                             res.forEach(function (elm, i) {
                                 strlist += `
                                     <li>
-                                    <a href="javascript:;" id=${elm.sid}>
+                                    <a href="http://127.0.0.1/h5-2006/gree.com/projectname/src/detail.html?sid=${elm.sid}">
                                     <p class="li-top">
                                         <img class="lazy" data-original="${elm.url}" alt="">
                                     </p>

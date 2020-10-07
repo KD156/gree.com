@@ -1,7 +1,6 @@
 @charset "utf-8";
 @import './index/mixin';
 @import './index/header_top';
-@import './index/header';
-@import './index/menu';
-@import './detail/detail';
+@import './registry/head';
+@import './cart';
 @import './index/footer';

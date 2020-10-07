@@ -41,6 +41,23 @@ body {
             }
         }
 
+        .head-li{
+            @include li-style(none);
+            font-size: 12px;
+            margin-left: 50px;
+            width: 454px;
+            height: 35px;
+            @include flex(inline-flex, row, flex-start, center);
+            >span {
+                margin: 0px 10px;
+                color: #c8c8c8;
+            }
+            >li a {
+                @include a(none);
+                color: #cc0000;
+            }
+        }
+
         // 头部右侧ul
         .head-list1 {
             width: 537px;
@@ -94,6 +111,7 @@ body {
             position: absolute;
             top: 35px;
             right: 0px;
+            z-index: -1;
             >p{
                 height: 24px;
                 width: 90px;
@@ -118,6 +136,7 @@ body {
             position: absolute;
             top: 35px;
             right: 90px;
+            z-index: -1;
             >p{
                 width: 90px;
                 height: 24px;

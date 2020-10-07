@@ -68,23 +68,27 @@ define(['jquery'], function () {
             // 头部hover开始
             $('.head-list1 li').eq(5).hover(function () {
                 $('.service').stop(true).animate({
-                    opacity: 1
+                    opacity: 1,
+                    zindex: 100
                 })
             },
                 function () {
                     $('.service').stop(true).animate({
-                        opacity: 0
+                        opacity: 0,
+                        zindex: -1
                     })
                 })
 
             $('.head-list1 li').eq(4).hover(function () {
                 $('.collect').stop(true).animate({
-                    opacity: 1
+                    opacity: 1,
+                    zindex: 100
                 })
             },
                 function () {
                     $('.collect').stop(true).animate({
-                        opacity: 0
+                        opacity: 0,
+                        zindex: -1
                     })
                 })
             // 头部hover结束
@@ -186,6 +190,20 @@ define(['jquery'], function () {
             }
             lb()
             // 轮播图结束
+
+
+            //显示用户信息
+            if (localStorage.getItem('username')) {
+                $('.head-list').hide();
+                $('.head-li').show();
+                $('.user').html(localStorage.getItem('username'));
+            }
+
+            $('.tc').on('click', function() {
+                $('.head-list').show();
+                $('.head-li').hide();
+                localStorage.removeItem('username');
+            });
         }
     };
 });

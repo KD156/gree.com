@@ -66,12 +66,14 @@
                     padding: 1px 2px 1px 15px;
                     border: 1px solid #e8e8e8;
                     color: #747474;
-                    >input{
+
+                    >input {
                         height: 35px;
-                        width:220px;
+                        width: 220px;
                         outline: none;
                         border: none;
                     }
+
                     >span {
                         width: 35px;
                         height: 35px;
@@ -81,7 +83,8 @@
                         color: #747474;
                     }
                 }
-                >p{
+
+                >p {
                     width: 575px;
                     height: 33px;
                     margin-left: 175px;
@@ -90,10 +93,12 @@
                     line-height: 33px;
                     color: #747474;
                 }
-                >p:last-child{
+
+                >p:last-child {
                     color: #cc0000;
                 }
-                .btn{
+
+                .btn {
                     width: 260px;
                     height: 40px;
                     padding: 0px 25px;
@@ -104,7 +109,39 @@
                     margin-left: 180px;
                     color: #fff;
                     cursor: pointer;
+                    outline: none;
                 }
+                
+            }
+            .us {
+                font-size: 12px;
+                color: #cc0000;
+                text-align: left;
+                margin-left: 10px;
+            }
+            .ph{
+                font-size: 12px;
+                color: #cc0000;
+                text-align: left;
+                margin-left: 10px;
+            }
+            .em{
+                font-size: 12px;
+                color: #cc0000;
+                text-align: left;
+                margin-left: 10px;
+            }
+            .ps{
+                font-size: 12px;
+                color: #cc0000;
+                text-align: left;
+                margin-left: 10px;
+            }
+            .cp{
+                font-size: 12px;
+                color: #cc0000;
+                text-align: left;
+                margin-left: 10px;
             }
         }
     }
